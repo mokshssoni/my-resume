@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://api.fontshare.com/v2/css?f[]=supreme@900,700,500,400,300&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=space-grotesk@700,600,500,400,300&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=erode@900,800,700,600,500,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <title>Moksh Soni Resume</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+    }
+    
+    body {
+      background-color: transparent;
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+    }
+    
+    .resume-container {
+      width: 1000px;
+      display: flex;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+    
+    .sidebar {
+      width: 30%;
+      background-color: #1d4e6f;
+      color: white;
+      padding: 30px;
+    }
+    
+    .main-content {
+      width: 70%;
+      background-color: white;
+      padding: 30px;
+    }
+    
+    .name {
+      font-size: 28px;
+      margin-bottom: 5px;
+      letter-spacing: 0.5px;
+      font-weight:800;
+    }
+    
+    .title {
+      font-size: 16px;
+      margin-bottom: 25px;
+      color: #e4e4e4;
+      font-weight: 300;
+      letter-spacing: 0.3px;
+    }
+    
+    .contact-info {
+      margin-top: 25px;
+      margin-bottom: 30px;
+    }
+    
+    .contact-item {
+      margin-bottom: 8px;
+      font-size: 14px;
+      font-weight: 300;
+    }
+    
+    .section-title {
+      text-transform: uppercase;
+      font-weight: 600;
+      margin-bottom: 15px;
+      margin-top: 30px;
+      color: white;
+      font-size: 18px;
+      position: relative;
+      letter-spacing: 0.5px;
+    }
+    
+    .section-title::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      height: 2px;
+      width: 50px;
+      background-color: #5a9cc7;
+    }
+    
+    .skills-list {
+      list-style-type: none;
+    }
+    
+    .skills-list li {
+      margin-bottom: 10px;
+      font-size: 14px;
+      font-weight: 300;
+    }
+    
+    .main-section-title {
+      font-size: 20px;
+      color: #1d4e6f;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      font-weight: 600;
+      position: relative;
+      letter-spacing: 0.5px;
+    }
+    
+    .main-section-title::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -8px;
+      height: 2px;
+      width: 70px;
+      background-color: #5a9cc7;
+    }
+    
+    .job-title {
+      font-weight: 600;
+      font-size: 18px;
+      color: #1d4e6f;
+      margin-top: 20px;
+    }
+    
+    .company {
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+    
+    .duration {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 15px;
+      font-weight: 300;
+    }
+    
+    .job-description ul {
+      padding-left: 20px;
+    }
+    
+    .job-description li {
+      margin-bottom: 8px;
+      font-size: 14px;
+      color: #333;
+      line-height: 1.5;
+    }
+    
+    .profile-summary {
+      font-size: 14px;
+      line-height: 1.6;
+      color: #333;
+      margin-bottom: 5px;
+    }
+    
+    .education-item {
+      margin-bottom: 15px;
+    }
+    
+    .degree {
+      font-weight: 600;
+      font-size: 16px;
+      color: #1d4e6f;
+    }
+    
+    .school {
+      font-size: 14px;
+    }
+    
+    .edu-duration {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 5px;
+      font-weight: 300;
+    }
+    
+    .links a {
+      color: #d9d9d9;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+    
+    .links a:hover {
+      color: #5a9cc7;
+    }
+    
+    .technical-skills {
+      margin-top: 20px;
+    }
+    
+    .skill-category {
+      font-weight: 500;
+      margin-top: 10px;
+      margin-bottom: 5px;
+      font-size: 14px;
+    }
+    
+    .skill-items {
+      font-size: 12.5px;
+      margin-bottom: 10px;
+      color: #e4e4e4;
+      font-weight: 300;
+    }
+    
+    .intern-duration {
+      font-size: 12px;
+      margin-bottom: 10px;
+      color: #d9d3d3;
+      font-weight: 300;
+    }
+
+    .coursework {
+      font-size: 14px;
+      font-style: italic;
+      color: #666;
+      font-weight: 300;
+      margin-top: 3px;
+    }
+  </style>
+</head>
+<body>
+  <div class="resume-container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div class="name">Moksh Soni</div>
+      <div class="title">Data Analytics | Evaluation | Business Intelligence</div>
+      
+      <div class="contact-info">
+        <div class="contact-item">Vancouver, BC</div>
+        <div class="contact-item">705-817-1374</div>
+        <div class="contact-item">mokshssoni@gmail.com</div>
+      </div>
+      
+      
+      
+      <div class="section-title">Technical Skills</div>
+      <div class="technical-skills">
+        <div class="skill-category">Programming & Analysis:</div>
+        <div class="skill-items">R, SQL, Excel</div>
+        
+        <div class="skill-category">Data Visualization:</div>
+        <div class="skill-items">Tableau, PowerBI</div>
+        
+        <div class="skill-category">Statistical Analysis:</div>
+        <div class="skill-items">IBM SPSS (descriptive & inferential statistics)</div>
+        
+        <div class="skill-category">Research Tools:</div>
+        <div class="skill-items">Qualtrics XM, QuestionPro, NVivo</div>
+      </div>
+
+      <div class="section-title">Transferable Skills</div>
+      <ul class="skills-list">
+        <li>Program Evaluation</li>
+        <li>Data Modeling & Thematic Analysis</li>
+        <li>Automated Reporting</li>
+        <li>Data Visualization</li>
+        <li>Statistical Analysis</li>
+        <li>Survey Design & Methodology</li>
+        <li>Stakeholder Communication</li>
+        <li>KPI Development</li>
+      </ul>
+      
+      <div class="section-title">Links</div>
+      <div class="links">
+        <a href="https://www.linkedin.com/in/mokshsoni/">LinkedIn</a>
+      </div>
+
+      <div class="section-title">Internships</div>
+      <div class="technical-skills">
+        <div class="skill-category">Market Research Analyst Intern</div>
+        <div class="skill-items">Southern Alberta Institute of Technology (SAIT)</div>
+        <div class="intern-duration">May 2019 - August 2019</div>
+      </div>
+
+    </div>
+    
+    <!-- Main Content -->
+    <div class="main-content">
+      <div class="profile-summary">
+        Data analytics professional with over 5 years of experience in program evaluation, data modeling, and 
+        business intelligence. Expertise in analyzing complex datasets using Tableau, Excel, SPSS and R to conduct both 
+        qualitative and quantitative research. Skilled in developing automated reporting solutions, designing data 
+        collection instruments, and creating actionable visualizations that drive strategic decision-making.
+      </div>
+      
+      <div class="main-section-title">Employment History</div>
+      
+      <div class="job-title">Reporting and Insights Coordinator</div>
+      <div class="company">Southern Alberta Institute of Technology (SAIT)</div>
+      <div class="duration">Jun 2023 - Present</div>
+      <div class="job-description">
+        <ul>
+          <li>Designed and implemented automated reporting systems using Tableau and Excel, reducing report generation time by 40% while ensuring data accuracy for $8+ million funding agreements.</li>
+          <li>Developed comprehensive evaluation frameworks and KPIs through stakeholder collaboration, creating measurement plans that align with strategic objectives.</li>
+          <li>Conducted mixed-methods program evaluations combining qualitative thematic analysis with quantitative statistical methods to provide actionable insights for decision-makers.</li>
+          <li>Architected interactive Tableau/Smartsheet dashboards that transformed complex data into visual narratives, enabling leadership to identify trends and make data-driven decisions.</li>
+          <li>Implemented data validation protocols and quality assurance measures that improved data integrity by 30% across reporting systems.</li>
+          <li>Designed and optimized custom surveys using standard research methods, achieving 25% higher response rates and collecting more meaningful program/course outcomes data.</li>
+        </ul>
+      </div>
+      
+      <div class="job-title">Market Research Analyst</div>
+      <div class="company">Southern Alberta Institute of Technology (SAIT)</div>
+      <div class="duration">Sep 2019 - May 2023</div>
+      <div class="job-description">
+        <ul>
+          <li>Led end-to-end evaluation projects from requirements gathering through final reporting, independently managing timelines and stakeholder expectations.</li>
+          <li>Designed and pogrammed sophisticated data collection instruments using QuestionPro/Qualtrics, ensuring methodological rigor and data quality.</li>
+          <li>Applied advanced statistical analysis to survey data using IBM SPSS, generating detailed reports for leadership review and strategic decision-making.</li>
+          <li>Developed and maintained "SAIT Insights" research panel with 7,000+ members, designing recruitment strategies and engagement protocols.</li>
+          <li>Created automated R scripts that streamlined data cleaning and analysis processes, reducing processing time by 35%.</li>
+          <li>Designed interactive Tableau dashboards using data visualization best practices, transforming complex datasets into clear, actionable insights.</li>
+        </ul>
+      </div>
+      
+      <div class="main-section-title">Education</div>
+      <div class="education-item">
+        <div class="degree">Postgraduate Certificate: Research Analyst</div>
+        <div class="school">Georgian College</div>
+        <div class="edu-duration">Sep 2018 - Aug 2019</div>
+        <!-- <div>GPA: 4.0</div> -->
+        <div class="coursework">Relevant coursework: Advanced Statistical Analysis, Qualitative Research Methods, Survey Design, Program Evaluation</div>
+      </div>
+      
+      <div class="education-item">
+        <div class="degree">Postgraduate Certificate: Big Data Analytics</div>
+        <div class="school">Georgian College</div>
+        <div class="edu-duration">Sep 2017 - Apr 2018</div>
+        <!-- <div>GPA: 4.0</div> -->
+        <div class="coursework">Relevant coursework: Data Mining, R Programming, Statistical Modeling, Data Visualization</div>
+      </div>
+      
+      <div class="education-item">
+        <div class="degree">Bachelor of Engineering: Computer Science & Engineering</div>
+        <div class="school">Gujarat Technological University</div>
+        <div class="edu-duration">Jun 2013 - May 2017</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

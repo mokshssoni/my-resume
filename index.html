@@ -24,20 +24,22 @@
     }
     
     .resume-container {
-      width: 1000px;
+      width: 100%;
+      max-width: 1000px;
       display: flex;
+      flex-direction: column;
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     }
     
     .sidebar {
-      width: 30%;
+      width: 100%;
       background-color: #1d4e6f;
       color: white;
       padding: 30px;
     }
     
     .main-content {
-      width: 70%;
+      width: 100%;
       background-color: white;
       padding: 30px;
     }
@@ -46,7 +48,7 @@
       font-size: 28px;
       margin-bottom: 5px;
       letter-spacing: 0.5px;
-      font-weight:800;
+      font-weight: 800;
     }
     
     .title {
@@ -222,6 +224,20 @@
       font-weight: 300;
       margin-top: 3px;
     }
+
+    @media only screen and (min-width: 600px) {
+      .resume-container {
+        flex-direction: row;
+      }
+      
+      .sidebar {
+        width: 30%;
+      }
+      
+      .main-content {
+        width: 70%;
+      }
+    }
   </style>
 </head>
 <body>
@@ -236,8 +252,6 @@
         <div class="contact-item">705-817-1374</div>
         <div class="contact-item">mokshssoni@gmail.com</div>
       </div>
-      
-      
       
       <div class="section-title">Technical Skills</div>
       <div class="technical-skills">
@@ -277,7 +291,6 @@
         <div class="skill-items">Southern Alberta Institute of Technology (SAIT)</div>
         <div class="intern-duration">May 2019 - August 2019</div>
       </div>
-
     </div>
     
     <!-- Main Content -->
